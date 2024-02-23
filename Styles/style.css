@@ -197,8 +197,8 @@ header .nav-icons a:hover {
 }
 
 .hero .container .image {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 .hero .container .image img {
     display: block;
@@ -216,21 +216,25 @@ header .nav-icons a:hover {
 }
 
 .about .image {
-    height: 100%;
-    width: auto;
+   max-width: 100%;
+   height: auto;
 }
 
 .about .image img {
     display: block;
     margin: auto;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: auto;
+    height: 100%;
+    object-fit: fill;
 }
 
 .about .text-content {
-    padding: 150px 0;
+    
     width: 60%;
+    align-items: center;
+    justify-items: center;
+    padding: 100px 0;
+        
 }
 
 .about .text-content h1 {
@@ -322,6 +326,7 @@ header .nav-icons a:hover {
 }
 
 .selected-projects .image {
+    box-shadow: #e1bcbc;
     padding-top: 50px;
     overflow: hidden;
     align-items: center;
@@ -829,19 +834,21 @@ footer p {
 
 
 .myservices {
-    padding-top: 150px;
+    padding-top: 10px;
     padding-bottom: 100px;
     background-color: #161513;
 }
 .myservices h1 {
+    margin-top: 200px;
     text-align: center;
     font-size: 52px;
     color: white;
     font-weight: 600;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
+    
 }
 .myservices .text-content {
-    padding-top: 50px;
+    padding-top: 0px;
     
 }
 
@@ -849,7 +856,7 @@ footer p {
     color: white;
     font-size: 32px;
     font-weight: 600;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 .myservices .text-content p {
     color: #A2A2A2;
@@ -876,13 +883,14 @@ footer p {
 }
 .myservices .image {
     border-radius: 14px;
-    max-width: 100%;
-    height: auto;
+    max-height: 100%;
+    padding-bottom: 20px;
 }
 
 .myservices .image img {
     border-radius: 14px;
     width: 100%;
+    
     object-fit: cover;
 }
 
@@ -890,6 +898,7 @@ footer p {
 @media (max-width:995px) {
 
     .myservices h1 {
+        margin-top: 10px;
         padding-top: 100px;
         font-size: 38px;
         font-weight: 200;
