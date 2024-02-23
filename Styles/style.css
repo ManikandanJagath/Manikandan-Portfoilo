@@ -561,17 +561,20 @@ footer p {
         font-size: 14px;
     }
     .about .text-content {
-        align-items: center;
-        text-align: center;
+       
         padding: 50px 0;
         width: 80%;
-        margin: a;
+        margin: auto;
     }
 
     .about .text-content .about-numbers {
         display: block;
     }
 
+    .about .text-content .about-numbers .numbers  p {
+        padding:0;
+        margin-bottom: 30px;
+    }
     .about .image {
         display: none;
     }
