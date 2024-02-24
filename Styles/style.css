@@ -818,12 +818,31 @@ footer p {
     object-fit: cover;
 }
 
+.companies .image-2 {
+    display: none;
+    padding-top: 50px;
+    max-width: 100%;
+}
+.companies .image-2 img {
+    
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 @media (max-width:995px) {
 
     .work-experience .about-numbers {
         display: block;
         text-align: center;
         
+    }
+
+    .companies .image-1 {
+        display: none;
+    }
+
+    .companies .image-2 {
+        display: block;
     }
 
     .work-experience .about-numbers .numbers {
